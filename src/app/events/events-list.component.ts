@@ -6,8 +6,8 @@ import { Component } from '@angular/core'
         <div>
             <h1>Upcoming Angular Events</h1>
             <hr />
-            <event-thumbnail #thumbnail [event] = "eventModel"></event-thumbnail><!--Using template variables -->
-            <button class="btn btn-primary" (click)="thumbnail.logData()">{{thumbnail.buttonHeader}}</button>
+            <event-thumbnail [event] = "eventModel"></event-thumbnail>
+         
 
         </div>
     `
