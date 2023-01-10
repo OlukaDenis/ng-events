@@ -5,6 +5,10 @@ export class EventService {
     getEvents() {
         return EVENTS;
     }
+
+    getEvent(id: number) {
+        return EVENTS[id]
+    }
 }
 
 const EVENTS = [

@@ -3,7 +3,7 @@ import { EventService } from './shared/event.service'
 import { ToastrService } from '../common/toastr.service';
 
 @Component({
-    selector: 'event-list',
+    // selector: 'event-list', // Removed because the Router redirects to the page directly
     template: `
         <div>
             <h1>Upcoming Angular Events</h1>
