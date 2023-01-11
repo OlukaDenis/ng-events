@@ -19,6 +19,6 @@ export class CreateEventComponent {
     constructor(private router: Router) { }
 
     goBack() {
-        this.router.navigate(['/']);
+        this.router.navigate(['/events']);
     }
 }
