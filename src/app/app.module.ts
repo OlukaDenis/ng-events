@@ -17,7 +17,7 @@ import { EventRouteActivator } from './events/details/event-route-activator.serv
 import { EventResolverService } from './events/shared/event-list-resolver.service';
 
 /** ROUTES */
-import { appRoutes } from 'src/routes';
+import { appRoutes } from 'src/app/routes';
 
 @NgModule({
   imports: [
