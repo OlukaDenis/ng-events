@@ -10,7 +10,7 @@ import {
   EventService,
   EventRouteActivator,
   EventResolverService
-} from './events/index'
+} from './events'
 
 import { NavbarComponent } from './nav/index'
 

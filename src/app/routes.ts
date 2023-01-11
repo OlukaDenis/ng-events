@@ -7,7 +7,7 @@ import {
     EventRouteActivator,
     EventResolverService,
     EventDetailsComponent
-} from './events/index'
+} from './events'
 
 export const appRoutes: Routes = [
     {
