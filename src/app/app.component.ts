@@ -1,10 +1,14 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'denny-app',
+  template: `
+    <div>
+      <nav-bar></nav-bar>
+      <router-outlet></router-outlet>
+    </div>
+  `,
 })
 export class AppComponent {
-  title = 'ng-fundamentals';
+  title = 'app';
 }
