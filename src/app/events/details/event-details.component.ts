@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { EventService } from "../shared/event.service";
 import { ToastrService } from "src/app/common/toastr.service";
 import { ActivatedRoute } from "@angular/router";
-import { IEvent } from "../shared";
+import { Event } from "../shared";
 
 @Component({
     selector: 'event-details',
@@ -13,7 +13,7 @@ import { IEvent } from "../shared";
     `]
 })
 export class EventDetailsComponent implements OnInit {
-    event: IEvent | undefined;
+    event: Event | undefined;
 
     constructor(
         private eventService: EventService,

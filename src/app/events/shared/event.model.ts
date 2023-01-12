@@ -1,4 +1,4 @@
-export interface IEvent {
+export interface Event {
     id: number,
     name: string,
     date: Date,
@@ -11,10 +11,10 @@ export interface IEvent {
         country: string
     },
     onlineUrl?: string,
-    sessions: ISession[],
+    sessions: Session[],
 }
 
-export interface ISession {
+export interface Session {
     id: number,
     name: string,
     duration: number,

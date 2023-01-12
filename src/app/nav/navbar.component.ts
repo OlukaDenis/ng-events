@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { AuthService } from '../users/shared'
 
 @Component({
     selector: 'nav-bar',
@@ -10,4 +11,6 @@ import { Component } from "@angular/core";
         li > a.active { color: #f97924; font-weight: bold;}
     `]
 })
-export class NavbarComponent { }
+export class NavbarComponent {
+    constructor(public authService: AuthService) { }
+}

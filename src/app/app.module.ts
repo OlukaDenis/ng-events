@@ -12,11 +12,12 @@ import {
   EventResolverService
 } from './events'
 
-import { NavbarComponent } from './nav/index'
+import { NavbarComponent } from './nav'
 
 import { AppComponent } from './app.component';
 import { Error404Component } from './errors/404.components';
 import { ToastrService } from './common/toastr.service';
+import { AuthService } from './users/shared'
 
 /** ROUTES */
 import { appRoutes } from 'src/app/routes';
@@ -40,6 +41,7 @@ import { appRoutes } from 'src/app/routes';
     ToastrService,
     EventRouteActivator,
     EventResolverService,
+    AuthService,
     {
       provide: 'canDeactivateCreateEvent',
       useValue: checkDirtyState,
