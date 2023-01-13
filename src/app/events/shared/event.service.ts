@@ -13,9 +13,9 @@ export class EventService {
         return subject;
     }
 
-    getEvent(id: number): Event {
-        // return EVENTS.find(event => event.id == id);
-        return EVENTS[id]
+    getEvent(id: number): Event | undefined {
+        return EVENTS.find(event => event.id == id);
+        // return EVENTS[id]
     }
 }
 
